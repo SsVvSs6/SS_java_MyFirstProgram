@@ -16,3 +16,4 @@ sandbox/build/distributions/sandbox.zip
 sandbox/build/scripts/sandbox
 *.tar
 sandbox/build/scripts/sandbox.bat
+.idea/workspace.xml
