@@ -2,20 +2,22 @@ package ru.stqa.ptf.sandbox;
 
 public class MyFirstProgram {
 
-public static void main(String[] args) {
-  hello("world");
-  hello("user");
-  hello("Sveta");
+  public static void main(String[] args) {
+    hello("world");
+    hello("user");
+    hello("Sveta");
 
-  Square s = new Square(5);
-  System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
+    Square s = new Square(5);
+    System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-  Rectangle r = new Rectangle(4, 6);
-  System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
-}
+    Rectangle r = new Rectangle(4, 6);
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 
-public static void hello(String somebody) {
-  System.out.println("Hello, " + somebody + "!");
-}
+    Point p = new Point(2, 10);
+    System.out.println("Расстояние между точками " + p.x + " и " + p.y + " = " + p.distance());
+  }
 
+  public static void hello(String somebody) {
+    System.out.println("Hello, " + somebody + "!");
+  }
 }
